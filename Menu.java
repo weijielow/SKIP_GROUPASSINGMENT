@@ -111,7 +111,7 @@ public class Menu {
                         System.out.println("Please Add New Order First Before Login!");
                         break;
                     }
-                    displayAllCustomers(orderID, customer_name, customer_restaurant, customer_ordertime, customer_amount);
+                    // call display method
                     break;
 
                 case 5: //list number of customer orders more than x times
@@ -308,17 +308,5 @@ public class Menu {
         double rm = scan.nextDouble();
         System.out.printf("AMOUNT PAID                 : RM%.2f%n", rm);
         testamount[numOfOrders] = rm;
-    }
-
-    public static void displayAllCustomers(int[] orderID, String[] customer_name, String[] customer_restaurant, String[] customer_ordertime, double[] customer_amount) {
-        System.out.println("Displaying all student data......");
-        for (int i = 0; i < numOfOrders; i++) {
-            System.out.println("ID: " + orderID[i]);
-            System.out.println("NAME: " + customer_name[i]);
-            System.out.println("RESTAURANT: " + customer_restaurant[i]);
-            System.out.println("TIME: " + customer_ordertime[i]);
-            System.out.println("AMOUNT: " + customer_amount[i]);
-            System.out.println("");
-        }
     }
 }
