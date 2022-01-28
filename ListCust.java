@@ -2,7 +2,7 @@ package GAsg;
 
 import java.util.Scanner;
 
-public class Trial5 {
+public class ListCust {
 
     public static void listcustomers(int numOfOrders, int[] ID, int[] orderID, String[] testname, String[] testemail) {
         Scanner scan = new Scanner(System.in);
