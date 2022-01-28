@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 
-public class Main {
+public class Menu {
 
     private static Scanner scan = new Scanner(System.in);
     private static int numOfOrders = 0;
