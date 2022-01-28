@@ -2,7 +2,7 @@ package GAsg;
 
 import java.util.Scanner;
 
-public class Trial4 {
+public class EditCust {
 
     private static Scanner scan = new Scanner(System.in);
 
