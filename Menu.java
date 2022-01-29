@@ -97,7 +97,7 @@ public class Menu {
                         // call register method
                         break;
                     }
-                    Trial4.modify(ID, names, HomeAddress, EmailAddress);
+                    EditCust.modify(ID, names, HomeAddress, EmailAddress);
                     break;
 
                 case 4: // display customer past orders 
@@ -125,7 +125,7 @@ public class Menu {
                         System.out.println("Please Add New Order First Before Login!");
                         break;
                     }
-                    Trial5.listcustomers(numOfOrders, ID, orderID, customer_name, EmailAddress);
+                    ListCust.listcustomers(numOfOrders, ID, orderID, customer_name, EmailAddress);
                     break;
 
                 case 6: //terminate
