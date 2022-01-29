@@ -8,19 +8,13 @@ public class ListCust {
         Scanner scan = new Scanner(System.in);
         char list = 0;
         // Q5:List Customers:
-        // ask
-        // to
-        // show
-        // or
-        // not
         // situation of list =y
         do {
             System.out.print("PLEASE ENTER THE NUMBER OF ORDER THAT YOU WISH TO KNOW>");
             int pastorder = scan.nextInt();
             // key in user id when order so it can record here
             // name is same sequence as user id in order id array
-            int total = 0; // calculate how many users have order more than that, display no user if total
-            // is 0
+            int total = 0; // calculate how many users have order more than that, display no user if total is 0
 
             for (int b = 0; b < numOfOrders; b++) { // loop for every user id that input when order
                 int k = 1; // k is count for the number of past order for each user
@@ -30,8 +24,7 @@ public class ListCust {
                 repeat = repeatID(b, orderID, repeat);
                 k = check(e, orderID, b, k);
 
-                if (repeat == false) { // if any previous user id is repeat with current user id, the following
-                    // statement wont continue.
+                if (repeat == false) { // if any previous user id is repeat with current user id, the following statement wont continue.
                     if (k > pastorder) { // if number of k more than value input then diaplay
                         System.out.println("");
                         System.out.println("CUSTOMER NAME         : " + testname[b]);
