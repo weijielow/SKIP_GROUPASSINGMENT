@@ -17,15 +17,20 @@ public class EditCust {
                 System.out.println("");
                 System.out.print("ENTER CUSTOMER ID>  ");
                 int cusID = scan.nextInt();
+                boolean newCus = true;
+                do {
+                    for (int a = 0; a < ID.length; a++) {
+                        if (cusID == ID[a]) {
+                            newCus = false;
+                        }
+                    }
+                    if (newCus == true) {
+                        System.out.println("Invalid customer ID, please enter again.");
+                        cusID = scan.nextInt();
+                    }
+                } while (newCus == true);
                 for (a = 0; a < ID.length; a++) {
                     if (cusID == ID[a]) {
-                        status = true;
-                        System.out.println("=============================================================");
-                        System.out.println("CUSTOMER DETAILS:");
-                        System.out.println("NAME            : " + names[a]);
-                        System.out.println("HOME ADDRESS    : " + HomeAddress[a]);
-                        System.out.println("EMAIL ADDRESS   : " + EmailAddress[a]);
-                        System.out.println("=============================================================");
                         change = SelectSection();
 
                         while (change < 1 || change > 3) {
